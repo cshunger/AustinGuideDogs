@@ -1,0 +1,468 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background: #D8E3D3;
+  font-family: Verdana,sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+strong {
+  font-weight: bolder;
+}
+
+h2 {
+  color: purple;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+
+  font-family: abolition,helvetica,arial,sans-serif
+}
+
+/*
+  ========================================
+  nav
+  ========================================
+*/
+
+header {
+  color: #fff;
+  background-color: #50B783;
+  height: 8vh;
+  padding-top: 1vh;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  height: 58px;
+}
+
+.menu {  
+    color: #fff;
+    font-size: 3em;
+    z-index: 4;
+    text-decoration: none;
+    margin-left: 2vh;
+  }
+
+.navbar {
+  display: none;
+  font-size: 3em;
+  background-color: #50B783;
+}
+
+.navbar a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  margin-left: 2vw;
+}
+
+@media all and (min-width: 805px) {
+  .menu {
+    display: none;
+  }
+  .navbar {
+    font-size: 42px;
+    position: fixed;
+    top: 0;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    width:100%;
+    background-color: #50B783;
+    box-shadow: 1px;
+    z-index: 4;
+  }
+
+  .navbar a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    margin: 0px 15px 5px 0px;
+  }
+
+  .home {
+    background: url("../images/logo.png") no-repeat content-box center top scroll;
+    text-indent: -9999px;    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 42px;
+    height: 42px;
+    z-index: 20px;
+    padding-top: 5px;
+  }
+}
+
+.main {
+  background: url("../images/twix.jpg") no-repeat center top fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh
+}
+
+.statement {
+    font-size: 2.7em;
+    /*text-align: center;*/
+    color: #fff;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25);
+}
+
+.mission {
+  padding-left: 5px;
+  position: absolute;
+  bottom: 2vh;
+}
+
+.about {
+  background: #D8E3D3;
+  height: auto;
+}
+
+.what {
+  float: left;
+  width: auto;
+  height: auto;
+  opacity: 0.9;
+  font-size: 1.45em;
+  margin:2vh 2vw;
+}
+
+@media all and (min-width: 950px) {
+  .about {
+    background: url("../images/tempe-bridge.jpg") no-repeat content-box left scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    background-size: cover;
+    height: 790px;
+    width:auto;
+  }
+
+  .what {
+    float: right;
+    width: 31vw;
+    height: auto;
+    margin-top: 12vh;
+    margin-right: 1vh;
+    opacity: 0.9;
+    font-size: 1.45em;
+    padding-right: 1vw;
+  }
+}
+
+@media all and (min-width: 1125px) {
+  .what {
+    width: 38vw;
+    margin-top: 17vh;
+  }
+}
+
+@media all and (min-width: 1290px) {
+.what {
+    width: 46vw;
+    margin-top: 23vh;
+  }
+}
+
+
+.no_events {
+  display: none;
+}
+/***********************************/
+/*          GALLERY                */
+/***********************************/
+
+.gallery {
+  background-color: #D8E3D3;
+  text-align: center;
+  margin-top:1vh;
+  margin-bottom:1vh;
+}
+
+.instagram {
+  width:175px; 
+  height:175px;
+  margin: 3px;
+}
+
+.instagram:hover {
+  width: 181px;
+  height: 181px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+@media all and (min-width: 905px) {
+  .instagram {
+    width:215px; 
+    height:215px;
+    margin: 3px;
+  }
+
+  .instagram:hover {
+    width: 221px;
+    height: 221px;
+    margin: 0px;
+    cursor: pointer;
+  }
+}
+
+@media all and (min-width: 1030px) {
+  .instagram {
+    width:250px; 
+    height:250px;
+    margin: 3px;
+  }
+
+  .instagram:hover {
+    width: 256px;
+    height: 256px;
+    margin: 0px;
+    cursor: pointer;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .instagram {
+    width:300px; 
+    height:300px;
+    margin: 3px;
+  }
+
+  .instagram:hover {
+    width: 306px;
+    height: 306px;
+    margin: 0px;
+    cursor: pointer;
+  }
+}
+/***********************************/
+/*          EVENTS                 */
+/***********************************/
+.events {
+  background-color: #D8E3D3;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100vw;
+  color: purple;
+}
+
+.event {
+  border-top: 3px red solid;
+  width: 45vw;
+  height: 24vh;
+  display: inline-block;
+  padding: 2vh 2vw;
+  background-color: #fff;
+  vertical-align: top;
+  margin: 1vh;
+  min-height: 105px;
+  max-height: 155px;
+  max-width: 180px;
+}
+
+@media all and (min-width: 650px) {
+  .event {
+    width: 30vw;
+    height: 24vh;
+  }
+}
+
+@media all and (min-width: 855px) {
+  .event {
+    width: 23vw;
+    height: 24vh;
+  }
+}
+
+@media all and (min-width: 1020px) {
+  .event {
+    width: 14vw;
+    height: 24vh;
+    padding: 0;
+  }
+}
+
+.event:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #888888;
+}
+
+/***********************************/
+/*          Involved                */
+/***********************************/
+
+  .involved {
+      text-align: center;
+      height: auto;
+      width:auto;
+      overflow: auto;
+  }
+
+.involved h2 {
+  color: black;
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 20px;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  margin-right: 0px;
+  float:right;
+  border-radius: 4px;
+  border-width: 1px;
+}
+
+form {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.input_div {
+  display: inline-block
+}
+
+.subscribe_div {
+  display: inline-block
+}
+.subscribe {
+  width: 300px;
+  height: 40px;
+  margin-left:0px;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  border: 0px;
+  float: left;
+  border-radius: 4px;
+}
+
+.subscribe:hover {
+  cursor: pointer;
+}
+
+.thank_you {
+  display: none;
+  font-size: 48px;
+  margin: 30px 15px 5px 0px;
+}
+
+.error {
+  color: red;
+  font: 12px;
+}
+@media all and (min-width: 955px) {
+  .involved {
+    background: url("../images/dodsonsleeping.jpg") no-repeat content-box left scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      text-align: center;
+      background-size: cover;
+      text-align: center;
+      height: 540px;
+      width:auto;
+      overflow: auto;
+  }
+}
+
+/***********************************/
+/*          Footer                 */
+/***********************************/
+
+footer {
+  text-align: center;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+footer img {
+  text-decoration: none;
+}
+footer img:hover{
+  cursor: pointer;
+}
+
+footer a {
+    text-decoration: none;
+}

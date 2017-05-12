@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--<link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>-->
+        <link rel="stylesheet" href="assets/stylesheets/main.css"/>
+        <title>GDB Austin</title>
+    </head>
+
+    <body onresize="resetNav();">
+        <header>
+            <a class="menu" href="#menu" onclick="openNav();">&#9776;Menu</a>
+            <nav class="navbar" id="navbar" onclick="openNav();">
+                <a href="#index" class="home">Home</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#events">Events</a>
+                <a href="#involved">Get Involved</a>
+            </nav>
+        </header>
+
+        <section class="container main" id="index">
+            <section class="mission">
+                <h1 class="statement">Raise a puppy, change a life</h1>
+            </section>
+            
+        </section>
+
+        <section class="container about" id="about">
+            <section class="what">
+                <p><strong>What</strong> do we do?<p>
+                <p>Guide Dogs for the Blind (GDB) empowers lives by creating exceptional partnerships between people, dogs, and communities.</p>
+​
+                <p>In our group in Austin, TX we believe that it takes a village to raise a guide dog. We provide a community of support to allow you to give back while being paid in unconditional love. It is a job that is both warm, and fuzzy!</p>
+​
+                <p>Puppy raisers are responsible for teaching our puppies good manners and basic obedience for about the first year of the pups’ lives. The pups return to one of GDB campuses for their formal guidework training when they are between 13 and 15 months old. </p>
+            </section>
+        </section>
+
+        <section class="container gallery" id="gallery">
+            
+        </section>
+
+        <section id="events" class="events">
+            <h2>Events</h2>
+            <p class="no_events" id="no_events">No upcoming events.</p>
+        </section>
+
+        <section class="container involved" id="involved">
+            <!--<h2 class="involved_heading">Get Involved</h2>-->
+            <h2 class="involved_heading" id="subscribe_heading">Subscribe to our mailing list.</h2>
+            <h1 class="thank_you" id="thank_you">Thank you!</h1>
+            <form action="/subscribe" onsubmit="event.preventDefault(); postEmail();" id="subscribe_form">
+                <div class="input_div"><input type="text" id="email" placeholder="Enter your email address"></div>
+                <div class="subscribe_div"><button class="subscribe">Subscribe</button></div>
+            </form> 
+        </section>
+
+        <footer>
+            <a class="image" href="https://www.facebook.com/LoneStarGuideDogRaisersAustin/" target="_blank">
+                <img src="./assets/images/facebook.png" width="50px" height="50px"/>
+            </a>
+            <a class="image" href="https://www.instagram.com/explore/tags/gdbaustin/" target="_blank">
+                <img src="./assets/images/instagram.png" width="50px" height="50px"/>
+            </a>
+        </footer>
+    </body>
+    <script src="./javascript/getData.js"></script>
+    <script src="./javascript/navbar.js"></script>
+    <script src="./javascript/form.js"></script>
+</html>
