@@ -1,4 +1,4 @@
-var url = "http://gdbaustin2-gdbaustin-webpage.1d35.starter-us-east-1.openshiftapps.com/";
+var url ="http://gdbaustin2-gdbaustin-webpage.1d35.starter-us-east-1.openshiftapps.com/";
 
 (function(){
   getJSON(url + 'facebook').then(function(data) {
