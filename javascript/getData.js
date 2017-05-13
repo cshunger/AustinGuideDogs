@@ -1,5 +1,7 @@
+var url = "http://gdbaustin2-gdbaustin-webpage.1d35.starter-us-east-1.openshiftapps.com/";
+
 (function(){
-  getJSON('http://localhost:3000/facebook').then(function(data) {
+  getJSON(url + 'facebook').then(function(data) {
     if(data.data == undefined){
       document.getElementById('no_events').style.display = "block";
     } else{
@@ -26,7 +28,7 @@
 })();
 
 (function(){
-  getJSON('http://localhost:3000/instagram').then(function(data) {
+  getJSON(url + 'instagram').then(function(data) {
     data.data.forEach(function(element){
       var photo = document.createElement('img');
 
