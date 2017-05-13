@@ -35,7 +35,7 @@ var url ="http://gdbaustin2-gdbaustin-webpage.1d35.starter-us-east-1.openshiftap
       photo.classList = "instagram";
       photo.src = element.images.standard_resolution.url;
       photo.onclick = function () {
-        window.open('https://www.instagram.com/p/BTwvtEvlXpC/', '_blank')
+        window.open(element.link, '_blank')
       }
       document.getElementById('gallery').appendChild(photo);
     });
