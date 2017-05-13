@@ -146,10 +146,11 @@ header {
   .home {
     background: url("../images/logo.png") no-repeat content-box center top scroll;
     text-indent: -9999px;    
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -ms-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
     width: 42px;
     height: 42px;
     z-index: 20px;
