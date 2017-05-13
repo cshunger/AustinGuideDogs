@@ -158,12 +158,12 @@ header {
 }
 
 .main {
-  background: url("../images/twix.jpg") no-repeat center top fixed; 
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  -ms-background-size: 100% auto;
-  -o-background-size: 100% auto;
-  background-size: 100% auto;
+  background: url("../images/twix.jpg") no-repeat center top; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100vh
 }
 
