@@ -1,7 +1,5 @@
-var url ="http://gdbaustin2-gdbaustin-webpage.1d35.starter-us-east-1.openshiftapps.com/";
-
 (function(){
-  getJSON(url + 'facebook').then(function(data) {
+  getJSON('facebook').then(function(data) {
     if(data.data == undefined){
       document.getElementById('no_events').style.display = "block";
     } else{
@@ -28,7 +26,7 @@ var url ="http://gdbaustin2-gdbaustin-webpage.1d35.starter-us-east-1.openshiftap
 })();
 
 (function(){
-  getJSON(url + 'instagram').then(function(data) {
+  getJSON('instagram').then(function(data) {
     data.data.forEach(function(element){
       var photo = document.createElement('img');
 
