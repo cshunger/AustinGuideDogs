@@ -54,13 +54,19 @@ app.get('/instagram', function(incomingReq, outGoingRes) {
 
 app.get('/facebook', function(incomingReq, outGoingRes) {
 
+    var currentDay = (new Date).getFullYear() + '-' +
+         ((new Date).getMonth()+1) +'-'+
+          ((new Date).getDate())
+
     var options = {
         host: 'graph.facebook.com',
-        path: '/LoneStarGuideDogRaisersAustin/events?access_token=277927609332317|c4f7351dfd084b4195f8bce985649ce4&since=' + (new Date).getTime(),
+        path: '/LoneStarGuideDogRaisersAustin/events?access_token=277927609332317|c4f7351dfd084b4195f8bce985649ce4&since=' + currentDay,
         port: '443',
         method: 'GET',
         headers: {'Access-Control-Allow-Origin' : '*'}
     };
+
+    console.log(options.path)
 
     var str = ''
     callback = function(facebookRes) {
