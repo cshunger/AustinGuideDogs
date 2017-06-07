@@ -6,7 +6,7 @@ var https = require('https');
 var nodemailer = require('nodemailer');
 var bodyParser = require('body-parser');
 
-app.use(express.static('./'))
+app.use(express.static('./dist'))
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 app.get('/', function(req, res) {
     // res.status('200').send('Service is up');
-    res.sendFile(path.join(__dirname + '/dist/index.html'));
+    res.sendFile(path.join(__dirname + '/app/index.html'));
 });
 
 app.get('/instagram', function(incomingReq, outGoingRes) {
@@ -125,5 +125,5 @@ app.set('ip', process.env.IP || '0.0.0.0');
 
 
 http.createServer(app).listen(app.get('port'), app.get('ip'), function(){
-  console.log('Express server ' + app.get('ip') + 'listening on port ' + app.get('port'));
+  console.log('Express server ' + app.get('ip') + ' listening on port ' + app.get('port'));
 });
