@@ -66,8 +66,6 @@ app.get('/facebook', function(incomingReq, outGoingRes) {
         headers: {'Access-Control-Allow-Origin' : '*'}
     };
 
-    console.log(options.path)
-
     var str = ''
     callback = function(facebookRes) {
         facebookRes.setEncoding('utf8');
