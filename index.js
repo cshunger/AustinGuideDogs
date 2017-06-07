@@ -13,8 +13,8 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 
 app.get('/', function(req, res) {
-    res.status('200').send('Service is up');
-    res.sendFile(path.join(__dirname + '/index.html'));
+    // res.status('200').send('Service is up');
+    res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
 
 app.get('/instagram', function(incomingReq, outGoingRes) {
