@@ -5,24 +5,25 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "build": "gulp build",
     "start:dev": "./node_modules/.bin/env-cmd ./.env-dev node ./index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "gulp build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "nodemailer": "^4.0.1"
-  },
-  "devDependencies": {
-    "del": "^2.2.2",
-    "env-cmd": "^5.1.0",
+    "nodemailer": "^4.0.1",
     "gulp": "^3.9.1",
     "gulp-cache": "^0.4.6",
     "gulp-cssnano": "^2.1.2",
     "gulp-imagemin": "^3.3.0",
     "gulp-uglify": "^3.0.0",
     "gulp-useref": "^3.1.2"
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "env-cmd": "^5.1.0"
   }
 }
