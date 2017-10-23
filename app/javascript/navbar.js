@@ -6,7 +6,7 @@ function smallScreen(){
         e = d.documentElement,
         g = d.getElementsByTagName('body')[0],
         x = w.innerWidth || e.clientWidth || g.clientWidth;
-    return x < 805;
+    return x < 824;
 }
 
 function openNav(){
