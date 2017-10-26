@@ -6,4 +6,4 @@ To run on local machine:
 
 Currently hosted at:
 
-http://gdbaustin2-gdbaustin-webpage.1d35.starter-us-east-1.openshiftapps.com/
+http://gdbaustin.com
