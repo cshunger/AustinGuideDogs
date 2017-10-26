@@ -91,7 +91,7 @@ h2 {
 header {
   color: #fff;
   background-color: #50B783;
-  height: 8vh;
+  height: auto;
   padding-top: 1vh;
   position: fixed;
   width: 100%;
@@ -184,6 +184,18 @@ header {
   height: 100vh
 }
 
+@media all and (min-width: 44em) {
+  .main {
+    background: url("../images/twix.jpg") no-repeat left center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh
+  }
+}
+
 .statement {
     font-size: 2.7em;
     /*text-align: center;*/
@@ -203,7 +215,33 @@ header {
 .mission {
   padding-left: 5px;
   position: absolute;
-  bottom: 2vh;
+  top: 18vh;
+}
+
+.mission .cta {
+  width: auto;
+  height: auto;
+  padding:4px 12px;
+  margin-top: 10vh;
+  margin-left: 6vw;
+  color: #fff;
+  background-color: #b73916;
+  border-color: #2e6da4;
+  font-size: 2em;
+  border: 0px;
+  float: bottom;
+  border-radius: 4px;
+  text-decoration: none;
+  text-shadow: -2px 2px #346392;
+  background-color: #ff9664;
+  background-image: linear-gradient(top, #6496c8, #346392);
+  box-shadow: inset 0 0 0 1px #27496d;
+  border: none;
+  border-radius: 15px;
+}
+
+.mission .cta:hover {
+  cursor: pointer;
 }
 
 .about {
