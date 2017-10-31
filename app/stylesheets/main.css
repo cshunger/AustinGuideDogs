@@ -184,6 +184,10 @@ header {
   height: 100vh
 }
 
+.button_container {
+  margin-top: 23vh;
+}
+
 @media all and (min-width: 44em) {
   .main {
     background: url("../images/twix.jpg") no-repeat left center; 
@@ -215,7 +219,8 @@ header {
 .mission {
   padding-left: 5px;
   position: absolute;
-  top: 18vh;
+  top: 9vh;
+  margin-left: 1vw;
 }
 
 .mission .cta {
@@ -223,7 +228,7 @@ header {
   height: auto;
   padding:4px 12px;
   margin-top: 10vh;
-  margin-left: 6vw;
+  margin-left: 1vw;
   color: #fff;
   background-color: #b73916;
   border-color: #2e6da4;
