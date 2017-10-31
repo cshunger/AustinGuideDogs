@@ -391,15 +391,16 @@ header {
       height: auto;
       width:auto;
       overflow: auto;
+      top: 23vh;
   }
 
-.involved h2 {
-  color: black;
+.involved_heading {
+    color: #fff;
     font-size: 23px;
-    display: flex;
     flex-direction: column;
-    width: 100vw;
-    margin-top: 20px;
+    width: 90vw;
+    margin-top: 8vh;
+    margin-left: 3vw;
 }
 
 input {
@@ -448,6 +449,19 @@ form {
   color: red;
   font: 12px;
 }
+.involved {
+  background: url("../images/dodsonsleeping.jpg") no-repeat content-box left scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    background-size: cover;
+    text-align: center;
+    height: 540px;
+    width:auto;
+    overflow: hidden;
+}
+
 @media all and (min-width: 59.688em) {
   .involved {
     background: url("../images/dodsonsleeping.jpg") no-repeat content-box left scroll;
