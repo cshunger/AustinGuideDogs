@@ -97,6 +97,13 @@ p {
   font-size: 1.125em;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
 .menu {  
     color: #fff;
     font-size: 3em;
@@ -268,7 +275,6 @@ p {
 }
 
 .what {
-  float: left;
   width: auto;
   height: auto;
   opacity: 0.9;
@@ -400,13 +406,6 @@ p {
   flex-wrap: wrap;
   width: 100vw;
   color: purple;
-}
-
-a.anchor {
-    display: block;
-    position: relative;
-    top: -50px;
-    visibility: hidden;
 }
 
 .event {
