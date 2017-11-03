@@ -17,7 +17,7 @@
 
         event.appendChild(event_name);
         event.appendChild(event_time);
-        document.getElementById('events').appendChild(event);
+        document.getElementById('FacebookEvents').appendChild(event);
       });
     }
   }, function(status) { //error detection....
@@ -35,7 +35,7 @@
       photo.onclick = function () {
         window.open(element.link, '_blank')
       }
-      document.getElementById('gallery').appendChild(photo);
+      document.getElementById('InstagramGallery').appendChild(photo);
     });
   }, function(status) { //error detection....
     alert('Something went wrong.');
