@@ -277,6 +277,11 @@ header {
   margin:2vh 2vw;
 }
 
+.what > h2 {
+  color: #000;
+  width: auto;
+}
+
 @media all and (min-width: 59.375em) {
   .about {
     background: url("../images/tempe-bridge.jpg") no-repeat content-box left scroll;
@@ -291,7 +296,7 @@ header {
 
   .what {
     float: right;
-    width: 31vw;
+    width: 52vw;
     height: auto;
     margin-top: 12vh;
     margin-right: 1vh;
@@ -302,15 +307,15 @@ header {
 
 @media all and (min-width: 70.313em) {
   .what {
-    width: 38vw;
+    width: 52vw;
     margin-top: 17vh;
   }
 }
 
 @media all and (min-width: 80.625em) {
 .what {
-    width: 46vw;
-    margin-top: 23vh;
+    width: 52vw;
+    margin-top: 17vh;
   }
 }
 
