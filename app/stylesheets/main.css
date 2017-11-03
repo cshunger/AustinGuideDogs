@@ -77,11 +77,6 @@ h2 {
           box-sizing: border-box;
 }
 
-.container {
-
-  font-family: abolition,helvetica,arial,sans-serif
-}
-
 /*
   ========================================
   nav
@@ -96,6 +91,10 @@ header {
   position: fixed;
   width: 100%;
   z-index: 50;
+}
+
+p {
+  font-size: 1.125em;
 }
 
 .menu {  
@@ -273,7 +272,7 @@ header {
   width: auto;
   height: auto;
   opacity: 0.9;
-  font-size: 1.25em;
+  font-size: 1.125em;
   margin:2vh 2vw;
 }
 
@@ -514,7 +513,7 @@ form {
 
 .thank_you {
   display: none;
-  font-size: 48px;
+  font-size: 1.125;
   margin: 30px 15px 5px 0px;
 }
 
