@@ -186,6 +186,7 @@ header {
 
 .button_container {
   margin-top: 23vh;
+  white-space: nowrap;
 }
 
 @media all and (min-width: 44em) {
