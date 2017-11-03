@@ -57,7 +57,7 @@ strong {
 
 h2 {
   color: purple;
-  font-size: 32px;
+  font-size: 1.5em;
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -90,7 +90,7 @@ h2 {
 
 header {
   color: #fff;
-  background-color: #50B783;
+  background-color: #00A65C;
   height: auto;
   padding-top: 1vh;
   position: fixed;
@@ -109,7 +109,7 @@ header {
 .navbar {
   display: none;
   font-size: 2.18em;
-  background-color: #50B783;
+  background-color: #00A65C;
 }
 
 .navbar a {
@@ -130,7 +130,6 @@ header {
     justify-content:center;
     align-items:flex-start;
     width:100%;
-    background-color: #50B783;
     box-shadow: 1px;
     z-index: 4;
   }
@@ -170,7 +169,6 @@ header {
     width: 42px;
     height: 42px;
     z-index: 20px;
-    padding-top: 5px;
   }
 }
 
@@ -201,8 +199,24 @@ header {
   }
 }
 
+.title {
+    font-size: 2.25em;
+    /*text-align: center;*/
+    color: #fff;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25);
+}
+
 .statement {
-    font-size: 2.7em;
+    font-size: 1.5em;
     /*text-align: center;*/
     color: #fff;
     text-shadow: 0 1px 0 #ccc,
@@ -229,17 +243,16 @@ header {
   height: auto;
   padding:4px 12px;
   margin-top: 10vh;
-  margin-left: 1vw;
+  margin-left: .5vw;
   color: #fff;
-  background-color: #b73916;
   border-color: #2e6da4;
-  font-size: 2em;
+  font-size: 1.5em;
   border: 0px;
   float: bottom;
   border-radius: 4px;
   text-decoration: none;
   text-shadow: -2px 2px #346392;
-  background-color: #ff9664;
+  background-color: #00A65C;
   background-image: linear-gradient(top, #6496c8, #346392);
   box-shadow: inset 0 0 0 1px #27496d;
   border: none;
@@ -260,7 +273,7 @@ header {
   width: auto;
   height: auto;
   opacity: 0.9;
-  font-size: 1.45em;
+  font-size: 1.25em;
   margin:2vh 2vw;
 }
 
@@ -283,7 +296,6 @@ header {
     margin-top: 12vh;
     margin-right: 1vh;
     opacity: 0.9;
-    font-size: 1.45em;
     padding-right: 1vw;
   }
 }
@@ -386,6 +398,13 @@ header {
   color: purple;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
 .event {
   border-top: 3px red solid;
   width: 45vw;
@@ -427,7 +446,7 @@ header {
 }
 
 .event_text {
-  font-size: 18px;
+  font-size: 1.125em;
   color: black;
 }
 
@@ -445,7 +464,7 @@ header {
 
 .involved_heading {
     color: #fff;
-    font-size: 23px;
+    font-size: 1.125em;
     flex-direction: column;
     width: 90vw;
     margin-top: 8vh;
