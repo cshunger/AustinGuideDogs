@@ -410,36 +410,33 @@ a.anchor {
 
 .event {
   border-top: 3px red solid;
-  width: 45vw;
-  height: 24vh;
+  width:175px; 
+  height:175px;
   display: inline-block;
-  padding: 2vh 2vw;
+  padding: 45px 2vw;
   background-color: #fff;
   vertical-align: top;
   margin: 1vh;
-  min-height: 105px;
-  max-height: 155px;
-  max-width: 180px;
 }
 
-@media all and (min-width: 40.625em) {
+@media all and (min-width: 56.563em) {
   .event {
-    width: 30vw;
-    height: 24vh;
+    width:215px; 
+    height:215px;
   }
 }
 
-@media all and (min-width: 53.438em) {
+@media all and (min-width: 64.375em) {
   .event {
-    width: 23vw;
-    height: 24vh;
+    width:250px; 
+    height:250px;
   }
 }
 
-@media all and (min-width: 63.750em) {
+@media all and (min-width: 80em) {
   .event {
-    width: 14vw;
-    height: 24vh;
+    width:300px; 
+    height:300px;
   }
 }
 
