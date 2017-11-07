@@ -26,6 +26,6 @@
     "del": "^2.2.2"
   },
   "devDependencies": {
-    "env-cmd": "^5.1.0",
+    "env-cmd": "^5.1.0"
   }
 }
