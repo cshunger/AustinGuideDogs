@@ -3,7 +3,8 @@
     if(data.data == undefined){
       document.getElementById('no_events').style.display = "block";
     } else{
-      data.data.forEach(function(element){
+      for(var i = 0; i < data.data.length; i++) {
+        var element = data.data[i];
         var event = document.createElement('div');
         var event_name = document.createElement('p')
         var event_time = document.createElement('p')
@@ -18,7 +19,7 @@
         event.appendChild(event_name);
         event.appendChild(event_time);
         document.getElementById('FacebookEvents').appendChild(event);
-      });
+      }
     }
   }, function(status) { //error detection....
     alert('Something went wrong.');
@@ -27,7 +28,8 @@
 
 (function(){
   getJSON('instagram').then(function(data) {
-    data.data.forEach(function(element){
+    for(var i = 0; i < data.data.length; i++) {
+      var element = data.data[i];
       var photo = document.createElement('img');
 
       photo.classList = "instagram";
@@ -36,7 +38,7 @@
         window.open(element.link, '_blank')
       }
       document.getElementById('InstagramGallery').appendChild(photo);
-    });
+    }
   }, function(status) { //error detection....
     alert('Something went wrong.');
   });
