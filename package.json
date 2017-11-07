@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "env-cmd": "^5.1.0",
-    "gulp-concat": "^2.6.1"
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^2.0.2"
   }
 }
