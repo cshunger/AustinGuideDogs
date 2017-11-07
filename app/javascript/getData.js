@@ -12,10 +12,10 @@
         var event_time = document.createElement('p')
 
         event.classList = "event";
-        event_name.innerHTML = data.data[element].name;
-        event_time.innerHTML = convertTime(data.data[element].start_time);
+        event_name.innerHTML = response[element].name;
+        event_time.innerHTML = convertTime(response[element].start_time);
         event.onclick = function () {
-          window.open('https://www.facebook.com/events/' + data.data[element].id, '_blank')
+          window.open('https://www.facebook.com/events/' + response[element].id, '_blank')
         }
 
         event.appendChild(event_name);
@@ -37,7 +37,7 @@
       var photo = document.createElement('img');
 
       photo.classList = "instagram";
-      photo.src = data.data[element].images.standard_resolution.url;
+      photo.src = response[element].images.standard_resolution.url;
       photo.onclick = function () {
         window.open(element.link, '_blank')
       }
