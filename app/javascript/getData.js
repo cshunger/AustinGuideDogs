@@ -3,17 +3,16 @@
     if(data.data == undefined){
       document.getElementById('no_events').style.display = "block";
     } else{
-      for(var i = 0; i < data.data.length; i++) {
-        var element = data.data[i];
+      for(element in data.data) {
         var event = document.createElement('div');
         var event_name = document.createElement('p')
         var event_time = document.createElement('p')
 
         event.classList = "event";
-        event_name.innerHTML = element.name;
-        event_time.innerHTML = convertTime(element.start_time);
+        event_name.innerHTML = data.data[element].name;
+        event_time.innerHTML = convertTime(data.data[element].start_time);
         event.onclick = function () {
-          window.open('https://www.facebook.com/events/' + element.id, '_blank')
+          window.open('https://www.facebook.com/events/' + data.data[element].id, '_blank')
         }
 
         event.appendChild(event_name);
@@ -28,12 +27,11 @@
 
 (function(){
   getJSON('instagram').then(function(data) {
-    for(var i = 0; i < data.data.length; i++) {
-      var element = data.data[i];
+    for(element in data.data) {
       var photo = document.createElement('img');
 
       photo.classList = "instagram";
-      photo.src = element.images.standard_resolution.url;
+      photo.src = data.data[element].images.standard_resolution.url;
       photo.onclick = function () {
         window.open(element.link, '_blank')
       }
