@@ -1,9 +1,12 @@
 (function(){
   getJSON('facebook').then(function(data) {
-    if(data.data == undefined){
+    var response = undefined;
+    if(typeof(data) === "string") response = JSON.parse(data).data;
+    else response = data.data;
+    if(response == undefined){
       document.getElementById('no_events').style.display = "block";
     } else{
-      for(element in data.data) {
+      for(element in response) {
         var event = document.createElement('div');
         var event_name = document.createElement('p')
         var event_time = document.createElement('p')
@@ -27,7 +30,10 @@
 
 (function(){
   getJSON('instagram').then(function(data) {
-    for(element in data.data) {
+    var response = undefined;
+    if(typeof(data) === "string") response = JSON.parse(data).data;
+    else response = data.data;
+    for(element in response) {
       var photo = document.createElement('img');
 
       photo.classList = "instagram";
