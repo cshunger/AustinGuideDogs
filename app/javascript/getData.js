@@ -11,7 +11,7 @@
         var event_name = document.createElement('p')
         var event_time = document.createElement('p')
 
-        event.classList = "event";
+        event.className = " event";
         event.id = response[element].id;
         event_name.innerHTML = response[element].name;
         event_time.innerHTML = convertTime(response[element].start_time);
@@ -22,10 +22,6 @@
         event.appendChild(event_name);
         event.appendChild(event_time);
         document.getElementById('FacebookEvents').appendChild(event);
-        var disp = event.style.display;
-        event.style.display = "none";
-        var redrawFix = event.offsetHeight;
-        event.style.display = disp;
       }
     }
   }, function(status) { //error detection....
@@ -41,17 +37,13 @@
     for(element in response) {
       var photo = document.createElement('img');
 
-      photo.classList = "instagram";
+      photo.className += " instagram";
       photo.src = response[element].images.standard_resolution.url;
       photo.link = response[element].link;
       photo.onclick = function () {
         window.open(this.link, '_blank')
       }
       document.getElementById('InstagramGallery').appendChild(photo);
-      var disp = photo.style.display;
-      photo.style.display = "none";
-      var redrawFix = photo.offsetHeight;
-      photo.style.display = disp;
     }
   }, function(status) { //error detection....
     alert('Something went wrong.');
