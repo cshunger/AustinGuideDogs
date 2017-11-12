@@ -12,10 +12,11 @@
         var event_time = document.createElement('p')
 
         event.classList = "event";
+        event.id = response[element].id;
         event_name.innerHTML = response[element].name;
         event_time.innerHTML = convertTime(response[element].start_time);
         event.onclick = function () {
-          window.open('https://www.facebook.com/events/' + response[element].id, '_blank')
+          window.open('https://www.facebook.com/events/' + this.id, '_blank')
         }
 
         event.appendChild(event_name);
@@ -38,8 +39,9 @@
 
       photo.classList = "instagram";
       photo.src = response[element].images.standard_resolution.url;
+      photo.link = response[element].link;
       photo.onclick = function () {
-        window.open(element.link, '_blank')
+        window.open(this.link, '_blank')
       }
       document.getElementById('InstagramGallery').appendChild(photo);
     }
