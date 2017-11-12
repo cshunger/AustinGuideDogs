@@ -22,6 +22,10 @@
         event.appendChild(event_name);
         event.appendChild(event_time);
         document.getElementById('FacebookEvents').appendChild(event);
+        var disp = event.style.display;
+        event.style.display = "none";
+        var redrawFix = event.offsetHeight;
+        event.style.display = disp;
       }
     }
   }, function(status) { //error detection....
@@ -44,6 +48,10 @@
         window.open(this.link, '_blank')
       }
       document.getElementById('InstagramGallery').appendChild(photo);
+      var disp = photo.style.display;
+      photo.style.display = "none";
+      var redrawFix = photo.offsetHeight;
+      photo.style.display = disp;
     }
   }, function(status) { //error detection....
     alert('Something went wrong.');
