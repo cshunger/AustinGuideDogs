@@ -210,7 +210,7 @@ a.anchor {
     font-size: 2.15em;
 font-family: arial black;
     /*text-align: center;*/
-    color: #fff;
+    color: #000;
 }
 
 .statement {
@@ -218,13 +218,13 @@ font-family: arial black;
 font-family: arial;
 font-weight: bold;
     text-align: center;
-    color: #007943;
+    color: #fff;
 }
 
 .mission {
   padding-left: 5px;
   position: absolute;
-  top: 9vh;
+  top: 6vh;
   margin-left: 1vw;
 }
 
