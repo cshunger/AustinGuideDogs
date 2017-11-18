@@ -58,6 +58,7 @@ strong {
 h2 {
   color: purple;
   font-size: 1.5em;
+  font-family: arial black;
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -206,35 +207,18 @@ a.anchor {
 }
 
 .title {
-    font-size: 2.25em;
+    font-size: 2.15em;
+font-family: arial black;
     /*text-align: center;*/
     color: #fff;
-    text-shadow: 0 1px 0 #ccc,
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25);
 }
 
 .statement {
     font-size: 1.5em;
-    /*text-align: center;*/
-    color: #fff;
-    text-shadow: 0 1px 0 #ccc,
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25);
+font-family: arial;
+font-weight: bold;
+    text-align: center;
+    color: #007943;
 }
 
 .mission {
@@ -257,7 +241,6 @@ a.anchor {
   float: bottom;
   border-radius: 4px;
   text-decoration: none;
-  text-shadow: -2px 2px #346392;
   background-color: #00A65C;
   background-image: linear-gradient(top, #6496c8, #346392);
   box-shadow: inset 0 0 0 1px #27496d;
