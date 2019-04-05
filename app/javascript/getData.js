@@ -1,24 +1,28 @@
 (function(){
   getJSON('facebook').then(function(data) {
-    if(data.data == undefined){
+    var response = undefined;
+    if(typeof(data) === "string") response = JSON.parse(data).data;
+    else response = data.data;
+    if(response == undefined){
       document.getElementById('no_events').style.display = "block";
     } else{
-      data.data.forEach(function(element){
+      for(element in response) {
         var event = document.createElement('div');
         var event_name = document.createElement('p')
         var event_time = document.createElement('p')
 
-        event.classList = "event";
-        event_name.innerHTML = element.name;
-        event_time.innerHTML = convertTime(element.start_time);
+        event.className = " event";
+        event.id = response[element].id;
+        event_name.innerHTML = response[element].name;
+        event_time.innerHTML = convertTime(response[element].start_time);
         event.onclick = function () {
-          window.open('https://www.facebook.com/events/' + element.id, '_blank')
+          window.open('https://www.facebook.com/events/' + this.id, '_blank')
         }
 
         event.appendChild(event_name);
         event.appendChild(event_time);
-        document.getElementById('events').appendChild(event);
-      });
+        document.getElementById('FacebookEvents').appendChild(event);
+      }
     }
   }, function(status) { //error detection....
     alert('Something went wrong.');
@@ -27,16 +31,20 @@
 
 (function(){
   getJSON('instagram').then(function(data) {
-    data.data.forEach(function(element){
+    var response = undefined;
+    if(typeof(data) === "string") response = JSON.parse(data).data;
+    else response = data.data;
+    for(element in response) {
       var photo = document.createElement('img');
 
-      photo.classList = "instagram";
-      photo.src = element.images.standard_resolution.url;
+      photo.className += " instagram";
+      photo.src = response[element].images.standard_resolution.url;
+      photo.link = response[element].link;
       photo.onclick = function () {
-        window.open(element.link, '_blank')
+        window.open(this.link, '_blank')
       }
-      document.getElementById('gallery').appendChild(photo);
-    });
+      document.getElementById('InstagramGallery').appendChild(photo);
+    }
   }, function(status) { //error detection....
     alert('Something went wrong.');
   });

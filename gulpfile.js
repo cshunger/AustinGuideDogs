@@ -5,6 +5,7 @@ var useref = require('gulp-useref');
 var cssnano = require('gulp-cssnano');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
+var gp_concat = require('gulp-concat');
 var del = require('del');
 
 gulp.task('useref', function(){

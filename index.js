@@ -60,7 +60,7 @@ app.get('/facebook', function(incomingReq, outGoingRes) {
 
     var options = {
         host: 'graph.facebook.com',
-        path: '/GDBAustin/events?access_token=277927609332317|c4f7351dfd084b4195f8bce985649ce4&since=' + currentDay,
+        path: '/GDBAustinpuppyraisers/events?access_token=277927609332317|c4f7351dfd084b4195f8bce985649ce4&since=' + currentDay,
         port: '443',
         method: 'GET',
         headers: {'Access-Control-Allow-Origin' : '*'}
